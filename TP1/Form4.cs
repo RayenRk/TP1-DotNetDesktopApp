@@ -29,7 +29,7 @@ namespace TP1
             for (int i = 1; i <= num; i++)
             {
                 result *= i;
-                dataGridView1.Rows.Add(num, result);
+                dataGridView1.Rows.Add(i, result);
 
             }
         }

@@ -19,7 +19,6 @@ namespace TP1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // add a new row to the DataGridView from inputs
             dataGridView1.Columns.Add("Column1", "ID");
             dataGridView1.Columns.Add("Column2", "First Name");
             dataGridView1.Columns.Add("Column3", "Last Name");
@@ -41,7 +40,7 @@ namespace TP1
             textBox2.Text = "";
             textBox3.Text = "";
             textBox4.Text = "";
-            comboBox1.Text = "";
+            comboBox1.Text = "Male";
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -51,7 +50,25 @@ namespace TP1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.RemoveAt(dataGridView1.CurrentCell.RowIndex);
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[0].Index);
+            }else
+            {
+                MessageBox.Show("Please select a row to delete");
+            }
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
         }
     }
 }
