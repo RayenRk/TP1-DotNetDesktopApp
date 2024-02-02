@@ -21,5 +21,11 @@ namespace TP1
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            label3.Text = "Bonjour " + textBox1.Text + " " + textBox2.Text; 
+            label3.Visible = true;
+        }
     }
 }
