@@ -15,6 +15,8 @@ namespace TP1
         public Form7()
         {
             InitializeComponent();
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.SelectedIndex = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,7 +42,7 @@ namespace TP1
             textBox2.Text = "";
             textBox3.Text = "";
             textBox4.Text = "";
-            comboBox1.Text = "Male";
+            comboBox1.Text = comboBox1.AccessibleName.ToString();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -68,6 +70,11 @@ namespace TP1
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
