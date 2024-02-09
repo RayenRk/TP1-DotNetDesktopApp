@@ -125,6 +125,9 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.AccessibleDescription = "";
+            this.comboBox1.AccessibleName = "Male";
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Male",
@@ -133,7 +136,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 9;
-            this.comboBox1.Text = "Male";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -210,6 +213,7 @@
             // 
             // Form7
             // 
+            this.AccessibleDescription = "Male";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 436);
