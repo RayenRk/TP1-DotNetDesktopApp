@@ -45,6 +45,11 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Adresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -141,7 +146,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button1.Location = new System.Drawing.Point(139, 330);
+            this.button1.Location = new System.Drawing.Point(204, 333);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 46);
             this.button1.TabIndex = 10;
@@ -152,7 +157,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Orange;
-            this.button2.Location = new System.Drawing.Point(257, 330);
+            this.button2.Location = new System.Drawing.Point(322, 333);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(92, 46);
             this.button2.TabIndex = 11;
@@ -163,7 +168,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.LightCoral;
-            this.button3.Location = new System.Drawing.Point(378, 330);
+            this.button3.Location = new System.Drawing.Point(443, 333);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(92, 46);
             this.button3.TabIndex = 12;
@@ -174,7 +179,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Brown;
-            this.button4.Location = new System.Drawing.Point(498, 330);
+            this.button4.Location = new System.Drawing.Point(563, 333);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(92, 46);
             this.button4.TabIndex = 13;
@@ -185,9 +190,15 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.FirstName,
+            this.LastName,
+            this.Adresse,
+            this.Gender});
             this.dataGridView1.Location = new System.Drawing.Point(280, 113);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(378, 154);
+            this.dataGridView1.Size = new System.Drawing.Size(545, 154);
             this.dataGridView1.TabIndex = 14;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -204,19 +215,44 @@
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::TP1.Properties.Resources.quit_red;
-            this.pictureBox2.Location = new System.Drawing.Point(606, 26);
+            this.pictureBox2.Location = new System.Drawing.Point(775, 26);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 50);
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // FirstName
+            // 
+            this.FirstName.HeaderText = "First Name";
+            this.FirstName.Name = "FirstName";
+            // 
+            // LastName
+            // 
+            this.LastName.HeaderText = "Last Name";
+            this.LastName.Name = "LastName";
+            // 
+            // Adresse
+            // 
+            this.Adresse.HeaderText = "Adresse";
+            this.Adresse.Name = "Adresse";
+            // 
+            // Gender
+            // 
+            this.Gender.HeaderText = "Gender";
+            this.Gender.Name = "Gender";
+            // 
             // Form7
             // 
             this.AccessibleDescription = "Male";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(702, 436);
+            this.ClientSize = new System.Drawing.Size(869, 436);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
@@ -263,5 +299,10 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Adresse;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gender;
     }
 }
